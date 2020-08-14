@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+}
+
+html {
+    /* font-sixe is 16px which means 1rem = 16px */
+    font-size: 16px;
+}
+
+#upperContainer {
+    background: linear-gradient(125deg,  rgba(117, 117, 202, 0.561),
+    rgba(63, 7, 85, 0.89));
+    text-align: right;
+}
+
+#tribute-link {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    padding : 1rem 0;
+    text-transform: capitalize;
+    text-align: center;
+    color: #00000094;
+}
+
+#title {
+    color: rgb(65, 14, 98);
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1rem;
+}
+
+#img-div {
+    height: auto;
+    margin: 0;
+    border: 0;
+}
+
+#image {
+    display: block;
+    margin: 0 auto;
+    border-radius: 95%;
+    max-width: 100%;
+    height: auto;
+}
+
+#img-caption {
+    text-align: center;
+    margin: 1rem 0;
+    color: #00000094;
+}
+
+#lowerContainer {
+    background-color: rgba(63, 7, 85, 0.89);
+    background: linear-gradient(120deg,  rgba(63, 7, 85, 0.89), rgb(188, 99, 204));
+}
+
+section {
+    padding: 2rem 0;
+    font-size: 1.4rem;
+}
+
+section h2 {
+    text-align: center;
+    color: white;
+    animation-name: pop-out;
+    animation-duration: 800ms;
+    animation-fill-mode: forwards;
+}
+
+section p {
+    text-align: center;
+    font-size: 1rem;
+    color: grey;
+}
+
+#tribute-info {
+    height: auto;
+    width: 90vw;
+    margin: 1rem auto;
+}
+
+.timeline {
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.timeline time {
+    color: rgba(255, 255, 255, 0.575);
+    font-size: 1.1rem;
+    margin: 0 auto;
+    animation-name: fade-in;
+    animation-duration: 2s;   
+}
+
+.timeline p {
+    padding: 1.1rem 1.1rem 0 9rem;
+    color: white;
+    font-size: 1.2rem;
+    animation-name: pop-out;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+
+#footer {
+    background-color: white;
+    bottom: 0;
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-text {
+    color: grey;
+    font-size: 1rem;
+}
+
+#footer-icon {
+    color: black;
+    padding-right: 1rem;
+}
+
+#footer-icon a {
+    text-decoration: none;
+    color: grey;
+    padding: 0.5rem;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 20%;
+        color:white;
+    }
+
+    100% {
+        opacity: 100%;
+        color: rgba(255, 255, 255, 0.575);
+    }
+}
+
+@keyframes pop-out {
+    0%{
+        opacity: 0%;
+        color: whitesmoke;
+        font-size: 1em;;
+    }
+
+    100% {
+        opacity: 100%;
+        color: white;
+        font-size: 1.2em;
+    }
+}
